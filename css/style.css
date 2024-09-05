@@ -1,0 +1,113 @@
+.newLayer {
+    display: none;
+    background-color: #000000da;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 500px;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    right: 22px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    opacity: 0.3;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: rgb(255, 255, 255);
+}
+  
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.table1 {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tablebody {
+    background-color: rgb(255, 255, 255); 
+    text-align: center;
+}
+
+.trow {
+    height: 40px;
+    width: 300px;
+}
+
+.cell {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.thead {
+    color: aliceblue;
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    font-size: 1vw;
+}
+
+.googleMap {
+    height: 500px;
+  }
+
+@media (min-width: 354px) {
+    .newLayer {
+        width: 300px;
+    }
+}
+
+@media (min-width: 576px) {
+    .newLayer {
+        width: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .newLayer {
+        width: 500px;
+    }
+}
+@media (min-width: 992px) {
+    .newLayer {
+        width: 800px;
+    }
+}
+@media (min-width: 1200px) {
+    .newLayer {
+        width: 900px;
+    }
+}
